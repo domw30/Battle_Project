@@ -1,18 +1,24 @@
 require 'player'
 
 describe Player do
-  subject(:player_1) { Player.new('Dom') }
-  subject(:player_2) { Player.new('Carly') }
+  subject(:dom) { Player.new('Dom') }
+  subject(:ben) { Player.new('Ben') }
 
   describe '#name' do
     it 'should return the same name' do
-      expect(player_1.name).to eq 'Dom'
+      expect(dom.name).to eq 'Dom'
     end
   end
 
   describe '#hp' do
-    it 'return player 2s HP' do
-      expect(player_2.hp).to eq 200
+    it 'return player HP' do
+      expect(dom.hp).to eq described_class::DEFAULT_HP
+    end
+  end
+
+  describe '#attack' do
+    it 'damages the player, reduces HP' do
+      expect { ben.receive_damage }.to change { ben.hp }.by -50
     end
   end
 end
