@@ -24,7 +24,7 @@ class Battle < Sinatra::Base
   post '/attack' do
     @player_1 = $player_1.name
     @player_2 = $player_2.name
-    $player_2.receive_damage
+    Game.new.attack($player_2)
     erb :attack
   end
 
