@@ -1,11 +1,19 @@
-<html>
-<link href="<%= url('css/style.css') %>" rel="stylesheet" type="text/css" />
-<head>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Exo:200" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/CSS/style.css">
+
+  <title>BATTLE</title>
 </head>
 
+<header>
 <h1 class="main-heading">Battle!</h1>
 <h2>Sign in to play</h2>
+</header>
+<br>
+<body class='background-image'>
 <form action="/names" method="post">
   <label for="player_1">
     Player 1 name
@@ -17,4 +25,5 @@
   </label>
   <input type="submit" value="Submit">
 </form>
+</body>
 </html>

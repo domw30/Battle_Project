@@ -1,3 +1,20 @@
 .main-heading {
-  color: red;
+  background-color: black;
+  color: #FFE4E1;
+  font-family: 'Exo', sans-serif;
+  font-size: 140px;
+  font-style: italic;
+  opacity: 0.8;
+  text-align: center;
+  word-spacing: 20px;
+}
+
+.background-image {
+  background-image: url("https://images.unsplash.com/photo-1548364504-7011f0fd2a63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  opacity: 0.8;
+  min-height: 380px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
