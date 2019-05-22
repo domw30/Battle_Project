@@ -3,7 +3,7 @@
 This project is part of the Makers Academy weekly challenges schedule. The aim of this challenge is to develop an understanding of setting up a web project with testing frameworks such as Sinatra, Rspec and creating functional tests that simulate how users would interact with your application with capybara.
 
 ## User Stories
-
+```
 As two Players,
 So we can play a personalised game of Battle,
 We want to Start a fight by entering our Names and seeing them
@@ -19,6 +19,7 @@ I want to attack Player 2, and I want to get a confirmation
 As Player 1,
 So I can start to win a game of Battle,
 I want my attack to reduce Player 2's HP by 50
+```
 
 ## Using this program
 Clone this repo
